@@ -26,7 +26,7 @@ build-job:
     - docker build -t "$CI_REGISTRY_IMAGE:latest" .
     - docker push "$CI_REGISTRY_IMAGE:latest"
   tags:
-    - RunnerCesar
+    - RunnerCesarF
 
 deploy-job:
   stage: deploy
@@ -34,5 +34,5 @@ deploy-job:
     - docker pull "$CI_REGISTRY_IMAGE:latest"
     - docker-compose -f compose.yaml up -d
   tags:
-    - RunnerCesar
+    - RunnerCesarF
 
