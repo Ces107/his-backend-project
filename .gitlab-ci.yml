@@ -1,7 +1,7 @@
-image: docker:20.10.24-dind-bullseye
+image: docker:stable-dind
 
 services:
-  - name: docker:20.10.24-dind-bullseye
+  - name: docker:stable-dind
     alias: docker
 
 variables:
