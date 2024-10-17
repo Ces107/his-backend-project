@@ -35,3 +35,4 @@ deploy-job:
     - docker-compose -f compose.yaml up -d
   tags:
     - RunnerCesar
+
