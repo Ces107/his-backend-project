@@ -1,14 +1,18 @@
 image: docker:latest
 
 services:
-  - docker:dind
+  - name: docker:dind
+    alias: docker
 
 variables:
+  DOCKER_HOST: tcp://docker:2375
   DOCKER_DRIVER: overlay2
-  DOCKER_TLS_CERTDIR: ""   # Desactiva TLS para simplificar la configuración
+  DOCKER_TLS_CERTDIR: ""
 
 before_script:
-  - docker info            # Verifica que Docker esté accesible
+  - apt-get update && apt-get install -y dnsutils
+  - nslookup docker
+  - docker info
 
 stages:
   - build
