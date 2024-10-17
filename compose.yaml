@@ -1,4 +1,14 @@
 services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: hello-world-app
+
+
   postgres:
     image: 'postgres:latest'
     environment:
