@@ -1,7 +1,7 @@
-image: docker:latest
+image: docker:20.10.24-dind
 
 services:
-  - name: docker:dind
+  - name: docker:20.10.24-dind
     alias: docker
 
 variables:
@@ -10,8 +10,9 @@ variables:
   DOCKER_TLS_CERTDIR: ""
 
 before_script:
-  - apt-get update && apt-get install -y dnsutils
+  - apt-get update && apt-get install -y dnsutils iputils-ping
   - nslookup docker
+  - ping -c 3 docker
   - docker info
 
 stages:
@@ -21,16 +22,16 @@ stages:
 build-job:
   stage: build
   script:
-    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
-    - docker build -t $CI_REGISTRY_IMAGE:latest .
-    - docker push $CI_REGISTRY_IMAGE:latest
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+    - docker build -t "$CI_REGISTRY_IMAGE:latest" .
+    - docker push "$CI_REGISTRY_IMAGE:latest"
   tags:
-    - RunnerCesarF
+    - RunnerCesar
 
 deploy-job:
   stage: deploy
   script:
-    - docker pull $CI_REGISTRY_IMAGE:latest
+    - docker pull "$CI_REGISTRY_IMAGE:latest"
     - docker-compose -f compose.yaml up -d
   tags:
-    - RunnerCesarF
+    - RunnerCesar
