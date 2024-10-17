@@ -2,6 +2,7 @@ image: docker:latest
 
 variables:
   DOCKER_DRIVER: overlay2
+  DOCKER_HOST: unix:///var/run/docker.sock   # Conecta Docker al socket directamente
 
 stages:
   - build
@@ -16,8 +17,6 @@ build-job:
   tags:
     - RunnerCesar
   services: []
-  volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
 
 deploy-job:
   stage: deploy
@@ -27,6 +26,3 @@ deploy-job:
   tags:
     - RunnerCesar
   services: []
-  volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
-
