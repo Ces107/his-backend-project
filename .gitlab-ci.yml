@@ -1,10 +1,13 @@
 image: docker:latest
 
 services:
-  - docker:dind
+  - name: docker:dind
+    command: ["--tls=false", "--host=tcp://0.0.0.0:2375"]
 
 variables:
   DOCKER_DRIVER: overlay2
+  DOCKER_HOST: tcp://docker:2375   # Asegura que Docker se conecte al servicio Docker-in-Docker (dind)
+  DOCKER_TLS_CERTDIR: ""           # Desactiva TLS para simplificar la conexión
 
 stages:
   - build
@@ -17,8 +20,7 @@ build-job:
     - docker build -t $CI_REGISTRY_IMAGE:latest .
     - docker push $CI_REGISTRY_IMAGE:latest
   tags:
-    - RunnerCesar
-
+    - linux
 
 deploy-job:
   stage: deploy
@@ -26,4 +28,4 @@ deploy-job:
     - docker pull $CI_REGISTRY_IMAGE:latest
     - docker-compose -f compose.yaml up -d
   tags:
-    - RunnerCesar
+    - linux
