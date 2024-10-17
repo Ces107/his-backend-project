@@ -1,12 +1,11 @@
-image: docker:20.10.24-dind
+image: docker:20.10.24-dind-bullseye
 
 services:
-  - name: docker:20.10.24-dind
+  - name: docker:20.10.24-dind-bullseye
     alias: docker
 
 variables:
   DOCKER_HOST: tcp://docker:2375
-  DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: ""
 
 before_script:
@@ -35,4 +34,3 @@ deploy-job:
     - docker-compose -f compose.yaml up -d
   tags:
     - RunnerCesarF
-
