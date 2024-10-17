@@ -1,11 +1,7 @@
 image: docker:latest
 
-services:
-  - docker:dind
-
 variables:
   DOCKER_DRIVER: overlay2
-  CI_REGISTRY_IMAGE: gitlab.laberit.com/sina/bootcamp-backend/m-dulo-5/mini-sina-by-cesar
 
 stages:
   - build
@@ -19,6 +15,9 @@ build-job:
     - docker push $CI_REGISTRY_IMAGE:latest
   tags:
     - RunnerCesar
+  services: []
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
 
 deploy-job:
   stage: deploy
@@ -27,3 +26,6 @@ deploy-job:
     - docker-compose -f compose.yaml up -d
   tags:
     - RunnerCesar
+  services: []
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
