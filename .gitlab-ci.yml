@@ -2,11 +2,13 @@ image: docker:latest
 
 variables:
   DOCKER_DRIVER: overlay2
-  DOCKER_HOST: unix:///var/run/docker.sock   # Conecta Docker al socket directamente
 
 stages:
   - build
   - deploy
+
+before_script:
+  - docker info
 
 build-job:
   stage: build
@@ -15,8 +17,7 @@ build-job:
     - docker build -t $CI_REGISTRY_IMAGE:latest .
     - docker push $CI_REGISTRY_IMAGE:latest
   tags:
-    - RunnerCesar
-  services: []
+    - RunnerCesarF
 
 deploy-job:
   stage: deploy
@@ -24,5 +25,4 @@ deploy-job:
     - docker pull $CI_REGISTRY_IMAGE:latest
     - docker-compose -f compose.yaml up -d
   tags:
-    - RunnerCesar
-  services: []
+    - RunnerCesarF
