@@ -5,9 +5,8 @@ stages:
 # Variables para el runner
 variables:
   DOCKER_DRIVER: overlay2
-  DOCKER_TLS_CERTDIR: "/certs"
-  DOCKER_HOST: tcp://docker:2375/
-  DOCKER_TLS_VERIFY: 0
+  DOCKER_HOST: tcp://docker:2375 # Usa el puerto estándar sin TLS
+  DOCKER_TLS_CERTDIR: ""          # Desactiva por completo TLS
 
 # Etiqueta del runner
 default:
@@ -17,18 +16,18 @@ default:
 # Build stage
 build:
   stage: build
-  image: docker:20.10.16 # Asegurarse de usar una imagen de docker compatible
+  image: docker:20.10.16
   services:
     - docker:dind
   script:
-    - docker info # Verifica que el daemon esté en funcionamiento
+    - docker info # Verificar que el daemon esté en funcionamiento
     - docker build -t myapp-image .
   artifacts:
     paths:
       - target/*.jar
     expire_in: 1 day
 
-# Deploy stage (opcional, dependiendo de dónde se quiera desplegar)
+# Deploy stage
 deploy:
   stage: deploy
   image: docker:20.10.16
