@@ -1,46 +1,37 @@
-image: docker:dind
-
-services:
-  - name: docker:dind
-    alias: docker
-    command:
-      - "--tls=false"
-      - "--host=tcp://0.0.0.0:2375"
-
-variables:
-  DOCKER_HOST: tcp://docker:2375/
-  DOCKER_DRIVER: overlay2
-  DOCKER_TLS_CERTDIR: ""
-  CI_DEBUG_TRACE: "true"
-  DOCKER_OPTS: "--dns 8.8.8.8"  # Usar DNS público de Google
-
-before_script:
-  - apk add --no-cache docker-compose
-  - sleep 10  # Dar tiempo para que Docker inicie correctamente
-  - nslookup docker || true  # Continuar incluso si nslookup falla
-  - docker info
-  - docker network inspect bridge
-
 stages:
   - build
   - deploy
 
-build-job:
-  stage: build
-  script:
-    - docker network create ci_network || true
-    - docker network connect ci_network $(docker ps -qf "name=docker") || true
-    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "https://gitlab.laberit.com/"
-    - docker build -t "$CI_REGISTRY_IMAGE" .
-    - docker push "$CI_REGISTRY_IMAGE"
+variables:
+  DOCKER_DRIVER: overlay2
+  MAVEN_CLI_OPTS: "-DskipTests"
+
+default:
   tags:
     - CesRunner
 
-deploy-job:
-  stage: deploy
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
   script:
-    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "https://gitlab.laberit.com/"
-    - docker pull "$CI_REGISTRY_IMAGE"
-    - docker-compose -f docker-compose.yml up -d --verbose
-  tags:
-    - CesRunner
+    - docker build -t myapp-image .
+  artifacts:
+    paths:
+      - target/*.jar
+    expire_in: 1 day
+
+
+
+deploy:
+  stage: deploy
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker run -d --name myapp -p 8080:8080 myapp-image
+  only:
+    - main
+
