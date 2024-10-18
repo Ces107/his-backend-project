@@ -1,5 +1,3 @@
-version: '3.8'  # Especifica la versión del Compose file (recomendado)
-
 services:
   app:
     image: my-app:latest

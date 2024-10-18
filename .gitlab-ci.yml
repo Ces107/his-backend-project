@@ -28,8 +28,8 @@ stages:
 build-job:
   stage: build
   script:
-    - docker network create ci_network || true  # Crear una red personalizada si no existe
-    - docker network connect ci_network docker  # Conectar Docker a la red
+    - docker network create ci_network || true
+    - docker network connect ci_network $(docker ps -qf "name=docker") || true
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "https://gitlab.laberit.com/"
     - docker build -t "$CI_REGISTRY_IMAGE" .
     - docker push "$CI_REGISTRY_IMAGE"
