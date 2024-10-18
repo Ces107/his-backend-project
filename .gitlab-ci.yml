@@ -18,7 +18,7 @@ build:
     - docker:dind
   script:
     - docker info
-    - docker-compose -f docker-compose.yml build # Compila la imagen de la app
+    - docker-compose -f docker-compose.yml build
   artifacts:
     paths:
       - target/*.jar
@@ -30,6 +30,11 @@ deploy:
   services:
     - docker:dind
   script:
-    - docker-compose -f docker-compose.yml up -d # Levanta los servicios en segundo plano
+    - docker-compose -f docker-compose.yml pull
+    - docker-compose -f docker-compose.yml up -d
+    - docker ps
   only:
     - main
+  environment:
+    name: production
+    url: http://172.20.14.32:8080
