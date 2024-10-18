@@ -1,16 +1,16 @@
-image: docker:stable-dind
+image: docker:dind
 
 services:
-  - name: docker:stable-dind
-    alias: docker  # Alias para permitir la resolución del nombre
+  - name: docker:dind
+    alias: docker  #
 
 variables:
   DOCKER_HOST: tcp://docker:2375
   DOCKER_TLS_CERTDIR: ""
 
 before_script:
-  - apk add --no-cache docker-compose  # Instalación de docker-compose si es necesario
-  - nslookup docker  # Verificación de la resolución de DNS
+  - apk add --no-cache docker-compose
+  - nslookup docker
   - docker info
 
 stages:
