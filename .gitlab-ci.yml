@@ -2,36 +2,39 @@ stages:
   - build
   - deploy
 
+# Variables para el runner
 variables:
   DOCKER_DRIVER: overlay2
-  MAVEN_CLI_OPTS: "-DskipTests"
+  DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_TLS_VERIFY: 0
 
+# Etiqueta del runner
 default:
   tags:
     - CesRunner
 
-
+# Build stage
 build:
   stage: build
-  image: docker:latest
+  image: docker:20.10.16 # Asegurarse de usar una imagen de docker compatible
   services:
     - docker:dind
   script:
+    - docker info # Verifica que el daemon esté en funcionamiento
     - docker build -t myapp-image .
   artifacts:
     paths:
       - target/*.jar
     expire_in: 1 day
 
-
-
+# Deploy stage (opcional, dependiendo de dónde se quiera desplegar)
 deploy:
   stage: deploy
-  image: docker:latest
+  image: docker:20.10.16
   services:
     - docker:dind
   script:
     - docker run -d --name myapp -p 8080:8080 myapp-image
   only:
     - main
-
