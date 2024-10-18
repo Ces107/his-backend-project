@@ -9,9 +9,6 @@ variables:
   DOCKER_TLS_CERTDIR: ""
 
 before_script:
-  - apt-get update && apt-get install -y dnsutils iputils-ping
-  - nslookup docker
-  - ping -c 3 docker
   - docker info
 
 stages:
@@ -34,8 +31,6 @@ deploy-job:
     - docker-compose -f compose.yaml up -d
   tags:
     - RunnerCesarF
-
-
 
 
 
