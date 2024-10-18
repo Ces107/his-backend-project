@@ -3,19 +3,23 @@ image: docker:dind
 services:
   - name: docker:dind
     alias: docker
+    command:
+      - "--tls=false"
+      - "--host=tcp://0.0.0.0:2375"
 
 variables:
   DOCKER_HOST: tcp://docker:2375/
   DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: ""
   CI_DEBUG_TRACE: "true"
+  DOCKER_OPTS: "--dns 8.8.8.8"  # Usar DNS público de Google
 
 before_script:
   - apk add --no-cache docker-compose
-  - nslookup docker
+  - sleep 10  # Dar tiempo para que Docker inicie correctamente
+  - nslookup docker || true  # Continuar incluso si nslookup falla
   - docker info
   - docker network inspect bridge
-
 
 stages:
   - build
@@ -24,13 +28,13 @@ stages:
 build-job:
   stage: build
   script:
+    - docker network create ci_network || true  # Crear una red personalizada si no existe
+    - docker network connect ci_network docker  # Conectar Docker a la red
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "https://gitlab.laberit.com/"
     - docker build -t "$CI_REGISTRY_IMAGE" .
     - docker push "$CI_REGISTRY_IMAGE"
   tags:
     - CesRunner
-
-
 
 deploy-job:
   stage: deploy
