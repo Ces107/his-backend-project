@@ -2,16 +2,16 @@ package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model;
 
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.UserRole;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.hibernate.proxy.HibernateProxy;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+import java.util.*;
 
 @Table(name = "users")
 @Entity
@@ -19,8 +19,6 @@ import java.util.stream.Collectors;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = "id")
-
 public class User implements UserDetails {
 
     @Id
@@ -59,11 +57,7 @@ public class User implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // Combine role-based authorities and permissions
         var roleAuthorities = List.of(new SimpleGrantedAuthority("ROLE_" + role.name()));
-        var permissionAuthorities = permissions.stream()
-                .map(SimpleGrantedAuthority::new)
-                .toList();
         return new ArrayList<>(List.copyOf(roleAuthorities));
     }
 

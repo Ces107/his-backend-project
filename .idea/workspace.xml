@@ -4,31 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composeDebug.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composeLocal.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/DataInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AuthDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/RegisterDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Appointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Configuracion de seguridad añadida">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis$DiagnosisStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis$DiagnosisStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.txt" afterDir="false" />
     </list>
@@ -56,6 +39,9 @@
     "second": "63d4b66f-8f7c-49b1-8ac1-e7f7efe8693c"
   }
 }]]></component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -110,11 +96,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729498799641</updated>
-      <workItem from="1729498800924" duration="2216000" />
+      <workItem from="1729498800924" duration="3664000" />
     </task>
+    <task id="LOCAL-00001" summary="Configuracion de seguridad añadida">
+      <option name="closed" value="true" />
+      <created>1729503138904</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729503138905</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Configuracion de seguridad añadida" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuracion de seguridad añadida" />
   </component>
 </project>

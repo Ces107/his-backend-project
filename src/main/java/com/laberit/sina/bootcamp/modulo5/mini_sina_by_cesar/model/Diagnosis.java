@@ -35,7 +35,6 @@ public class Diagnosis {
         FEVER,
         DIABETES,
         HEART_FAILURE
-        // Add more as needed
     }
 
     public enum DiagnosisStatus {
