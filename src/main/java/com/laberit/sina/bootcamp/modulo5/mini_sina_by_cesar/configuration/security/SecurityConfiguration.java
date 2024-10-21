@@ -10,7 +10,6 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration {
@@ -21,19 +20,17 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                // Disable CSRF (use with caution in production)
                 .csrf(csrf -> csrf.disable())
-                // Configure session management to be stateless
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                // Configure URL authorization
                 .authorizeHttpRequests(authorize -> authorize
-                        // Allow unauthenticated access to these endpoints
-                        .requestMatchers("/auth/register", "/auth/login").permitAll()
-                        // All other endpoints require authentication
+                        .requestMatchers("/auth/register", "/auth/login", "/login").permitAll()
+                        .requestMatchers(
+                                "/swagger-ui/**",       // Permite acceso a Swagger UI
+                                "/v3/api-docs/**"       // Permite acceso a la documentación OpenAPI
+                        ).permitAll()
                         .anyRequest().authenticated()
-                )
-                // Add the JWT token filter
-                .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);
+                );
+                //.addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
