@@ -1,0 +1,52 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_TLS_CERTDIR: ""
+
+
+default:
+  tags:
+    - CesRunner
+
+
+build:
+  stage: build
+  image: docker:20.10.16
+  services:
+    - docker:dind
+  script:
+    - docker info
+    - docker-compose -f docker-compose.yml build
+  artifacts:
+    paths:
+      - target/*.jar
+    expire_in: 1 day
+  only:
+    - develop
+
+
+deploy:
+  stage: deploy
+  tags:
+    - shell
+  script:
+
+    - sudo apt-get update
+    - sudo apt-get install -y docker.io
+    - sudo systemctl start docker
+    - sudo systemctl enable docker
+
+    - docker-compose -f docker-compose.yml pull
+    - docker-compose -f docker-compose.yml up -d
+
+    - docker ps
+    - echo "La aplicación está corriendo en la IP:"
+    - hostname -I | awk '{print $1}'
+  only:
+    - main
+  environment:
+    name: production

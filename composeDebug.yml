@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    image: eclipse-temurin:21-jre-alpine
+    container_name: app_debug
+    networks:
+      - app_net
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target/app.jar:/app/app.jar
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres_debug:5432/db
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=password
+    working_dir: /app
+    entrypoint: ["java", "-jar", "app.jar"]
+
+networks:
+  app_net:
+    external: true

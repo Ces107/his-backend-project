@@ -1,2 +1,17 @@
 C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\Application.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\configuration\security\DataInitializer.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\configuration\security\SecurityConfig.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\configuration\security\SecurityFilter.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\configuration\security\TokenService.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\controller\AuthController.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\controller\TestController.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\dto\AuthDTO.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\dto\LoginDTO.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\dto\RegisterDTO.java
 C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\Hello.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\model\Appointment.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\model\Diagnosis.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\model\enumerations\UserRole.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\model\Patient.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\model\User.java
+C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\repository\UserRepository.java

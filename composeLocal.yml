@@ -1,0 +1,39 @@
+services:
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    networks:
+      - app_net
+    restart: unless-stopped
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"  # Exponer el puerto de PostgreSQL para que la aplicación pueda conectarse
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - app_net
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/db
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=password
+    volumes:
+      - ./logs:/app/logs  # Opcional: Si deseas almacenar logs de la aplicación
+
+networks:
+  app_net:
+    driver: bridge
+
+volumes:
+  db_data:
+    driver: local
