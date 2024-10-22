@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.52 s -- in com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.670 s -- in com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests
