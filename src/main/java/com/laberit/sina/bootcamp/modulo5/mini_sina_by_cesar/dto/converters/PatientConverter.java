@@ -1,5 +1,6 @@
-package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.dto;
+package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.dto.converters;
 
+import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.dto.CreatePatientDTO;
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.dto.PatientDTO;
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.Patient;
 import org.springframework.stereotype.Component;
@@ -13,7 +14,7 @@ public class PatientConverter {
                 patient.getFirstName(),
                 patient.getLastName(),
                 patient.getDateOfBirth(),
-                patient.getGender().name()
+                patient.getGender()
         );
     }
 
@@ -23,7 +24,16 @@ public class PatientConverter {
         patient.setFirstName(patientDTO.firstName());
         patient.setLastName(patientDTO.lastName());
         patient.setDateOfBirth(patientDTO.dateOfBirth());
-        patient.setGender(Patient.Gender.valueOf(patientDTO.gender()));
+        patient.setGender(patientDTO.gender());
+        return patient;
+    }
+
+    public Patient convertToEntityNoId(CreatePatientDTO patientDTO) {
+        Patient patient = new Patient();
+        patient.setFirstName(patientDTO.firstName());
+        patient.setLastName(patientDTO.lastName());
+        patient.setDateOfBirth(patientDTO.dateOfBirth());
+        patient.setGender(patientDTO.gender());
         return patient;
     }
 }

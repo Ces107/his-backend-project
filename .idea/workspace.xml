@@ -5,39 +5,127 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Configuracion de seguridad añadida">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/exception/ResourceNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/OpenApiConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AnalyticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AppointmentManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AppointmentManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/DiagnosisManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/DiagnosisManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/PatientManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/PatientManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/UserManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/UserManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AppointmentAnalyticsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AppointmentAnalyticsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AppointmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AppointmentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/CreatePatientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/CreatePatientDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/DiagnosisDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/DiagnosisDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/DoctorAppointmentStatsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/DoctorAppointmentStatsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/PatientAnalyticsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/PatientAnalyticsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/PatientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/PatientDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/AppointmentConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/AppointmentConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/DiagnosisConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/DiagnosisConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/PatientConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/PatientConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/UserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/UserConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/AppointmentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/AppointmentStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/DiagnosisStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/DiagnosisStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Disease.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Disease.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/DiagnosisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/DiagnosisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/AnalyticsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/AnalyticsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/DiagnosisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/DiagnosisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/AnalyticsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/AnalyticsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/AppointmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/AppointmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/DiagnosisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/DiagnosisServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/DataInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/DataInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/TokenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Appointment$AppointmentStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Appointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Appointment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis$DiagnosisStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis$Disease.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Patient$Gender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sina.bootcamp.modulo5.mini-sina-by-cesar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/sina.bootcamp.modulo5.mini-sina-by-cesar-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sina.bootcamp.modulo5.mini-sina-by-cesar-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/sina.bootcamp.modulo5.mini-sina-by-cesar-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Exception" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitLabMergeRequestFiltersHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPENED",
-    "assignee": {
-      "type": "org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue",
-      "username": "cpereiro",
-      "fullname": "César Pereiro García"
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPENED&quot;,
+    &quot;assignee&quot;: {
+      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
+      &quot;username&quot;: &quot;cpereiro&quot;,
+      &quot;fullname&quot;: &quot;César Pereiro García&quot;
     }
   }
-}]]></component>
-  <component name="GitLabMergeRequestsSettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "first": "https://gitlab.laberit.com/sina/bootcamp-backend/m-dulo-5/mini-sina-by-cesar",
-    "second": "63d4b66f-8f7c-49b1-8ac1-e7f7efe8693c"
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.laberit.com/sina/bootcamp-backend/m-dulo-5/mini-sina-by-cesar&quot;,
+    &quot;second&quot;: &quot;63d4b66f-8f7c-49b1-8ac1-e7f7efe8693c&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -45,33 +133,57 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2njuRl2uCf0C3XGjoZm7uY7Lynz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cpereiro/Desktop/sina.bootcamp.modulo5.mini-sina-by-cesar/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;sql.rename.search.for.storage.occurrences&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\service\impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\resources\sql" />
+      <recent name="C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\resources\db\migration" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="sina.bootcamp.modulo5.mini-sina-by-cesar" />
@@ -97,7 +209,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729498799641</updated>
-      <workItem from="1729498800924" duration="6013000" />
+      <workItem from="1729498800924" duration="12074000" />
+      <workItem from="1729557802213" duration="21714000" />
+      <workItem from="1729593270212" duration="5413000" />
+      <workItem from="1729614362149" duration="3915000" />
     </task>
     <task id="LOCAL-00001" summary="Configuracion de seguridad añadida">
       <option name="closed" value="true" />

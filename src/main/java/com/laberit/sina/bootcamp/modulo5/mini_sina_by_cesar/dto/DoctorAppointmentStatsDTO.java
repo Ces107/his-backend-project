@@ -1,28 +1,19 @@
 // DoctorAppointmentStatsDTO.java
 package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
 public class DoctorAppointmentStatsDTO {
 
-    private Long doctorId;
-    private String doctorName;
-    private Long canceledAppointments;
+    private final Long doctorId;
+    private final String doctorName;
+    private final Long canceledAppointments;
 
-    public DoctorAppointmentStatsDTO(Long doctorId, String doctorName, Long canceledAppointments) {
-        this.doctorId = doctorId;
-        this.doctorName = doctorName;
-        this.canceledAppointments = canceledAppointments;
-    }
 
-    // Getters and setters
-    public Long getDoctorId() {
-        return doctorId;
-    }
 
-    public String getDoctorName() {
-        return doctorName;
-    }
-
-    public Long getCanceledAppointments() {
-        return canceledAppointments;
-    }
 }

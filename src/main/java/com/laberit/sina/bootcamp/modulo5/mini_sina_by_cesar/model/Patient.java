@@ -1,5 +1,6 @@
 package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model;
 
+import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.Gender;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -41,10 +42,13 @@ public class Patient {
     @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL)
     private List<Appointment> appointments;
 
-    public enum Gender {
-        MALE,
-        FEMALE,
-        OTHER,
-        UNKNOWN
-    }
+    @ManyToOne
+    @JoinColumn(name = "doctor_id", nullable = false)
+    private User doctor;
+
+    @OneToOne
+    @JoinColumn(name = "user_id", unique = true)
+    private User user;
+
 }
+

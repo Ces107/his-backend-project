@@ -1,6 +1,7 @@
 package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model;
 
 
+import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.AppointmentStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -37,12 +38,7 @@ public class Appointment {
     private AppointmentStatus status;
 
 
-    enum AppointmentStatus {
-        PENDING,
-        CONFIRMED,
-        DONE,
-        CANCELLED
-    }
+
 
 
 

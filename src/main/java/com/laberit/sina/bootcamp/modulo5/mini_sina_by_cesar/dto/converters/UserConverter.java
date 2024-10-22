@@ -1,8 +1,7 @@
-package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.dto;
+package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.dto.converters;
 
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.dto.UserDTO;
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.User;
-import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.UserRole;
 import org.springframework.stereotype.Component;
 
 @Component

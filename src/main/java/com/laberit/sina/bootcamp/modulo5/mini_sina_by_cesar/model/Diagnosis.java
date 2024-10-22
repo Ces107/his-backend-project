@@ -1,6 +1,8 @@
 package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model;
 
 
+import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.DiagnosisStatus;
+import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.Disease;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -31,15 +33,7 @@ public class Diagnosis {
     @Column(name = "status", nullable = false)
     private DiagnosisStatus status;
 
-    public enum Disease {
-        FEVER,
-        DIABETES,
-        HEART_FAILURE
-    }
 
-    public enum DiagnosisStatus {
-        PENDING,
-        CONFIRMED,
-        REJECTED
-    }
+
+
 }
