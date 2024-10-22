@@ -18,13 +18,5 @@ public class UserConverter {
         );
     }
 
-    public User convertToEntity(UserDTO userDTO) {
-        return new User(
-                userDTO.id(),
-                userDTO.firstName(),
-                userDTO.lastName(),
-                userDTO.username(),
-                UserRole.valueOf(userDTO.role())
-        );
-    }
 }
+
