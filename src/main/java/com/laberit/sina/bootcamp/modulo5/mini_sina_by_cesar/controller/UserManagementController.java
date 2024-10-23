@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/users")
 @Tag(
-        name = "UserManagementController",
+        name = "UserController",
         description = "Controller for managing users in the system."
 )
 public class UserManagementController {
