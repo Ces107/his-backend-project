@@ -9,7 +9,6 @@ import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.D
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.service.DiagnosisService;
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.service.PatientService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -20,7 +19,6 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,12 +28,12 @@ import java.util.stream.Collectors;
 
 
 @RestController
-@RequestMapping("/patients/{patientId}/diagnoses")
+@RequestMapping("/mini-sina/v1/patients/{patientId}/diagnoses")
 @Tag(
-        name = "Diagnosis",
+        name = "Patient EHR (DiagnosesController)",
         description = "Controller for managing diagnoses related to a specific patient."
 )
-public class DiagnosisManagementController {
+public class DiagnosisController {
 
     @Autowired
     private DiagnosisService diagnosisService;

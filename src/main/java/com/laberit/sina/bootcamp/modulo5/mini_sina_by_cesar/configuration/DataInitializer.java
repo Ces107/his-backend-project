@@ -1,4 +1,4 @@
-package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.configuration.security;
+package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.configuration;
 
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.*;
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.*;

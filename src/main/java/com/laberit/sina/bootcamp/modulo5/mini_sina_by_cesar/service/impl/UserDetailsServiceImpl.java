@@ -1,4 +1,4 @@
-package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.configuration.security;
+package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.service.impl;
 
 
 import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.repository.UserRepository;

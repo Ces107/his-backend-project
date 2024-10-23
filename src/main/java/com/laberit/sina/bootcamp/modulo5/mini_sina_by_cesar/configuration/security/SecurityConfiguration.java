@@ -1,5 +1,6 @@
 package com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.configuration.security;
 
+import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

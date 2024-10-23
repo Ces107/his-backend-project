@@ -24,7 +24,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/mini-sina/v1/users")
 @Tag(
         name = "UserController",
         description = "Controller for managing users in the system."
@@ -115,9 +115,11 @@ public class UserManagementController {
      * @param userDTO User details in the request body.
      * @return A message indicating that user creation is not allowed.
      */
+    @Deprecated
     @Operation(
             summary = "Disallow user creation",
-            description = "This endpoint disallows user creation. Users should be created via the registration endpoint."
+            description = "This endpoint is deprecated. Users should be created via the registration endpoint at mini-sina/v1/auth/register.",
+            deprecated = true
     )
     @ApiResponses(value = {
             @ApiResponse(
@@ -130,6 +132,7 @@ public class UserManagementController {
     public String createUser(@RequestBody UserDTO userDTO) {
         return "User creation is not allowed in this endpoint. Please register users at mini-sina/v1/auth/register";
     }
+
 
     /**
      * Deletes a user by ID.

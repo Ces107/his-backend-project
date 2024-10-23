@@ -58,10 +58,11 @@ build:
 deploy:
   stage: deploy
   script:
+    - docker-compose -f docker-compose.yml down
     - docker-compose -f docker-compose.yml pull
     - docker-compose -f docker-compose.yml up -d
     - docker ps
-    # Esperar unos segundos para que la aplicación arranque
+
     - sleep 10
     # Capturar y mostrar los logs de la aplicación
     - docker-compose -f docker-compose.yml logs custom_app

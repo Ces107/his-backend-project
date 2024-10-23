@@ -27,12 +27,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/patients/{patientId}/appointments")
+@RequestMapping("/mini-sina/v1/patients/{patientId}/appointments")
 @Tag(
-        name = "AppointmentManagementController",
+        name = "Appointment",
         description = "Controller for managing appointments related to a specific patient. Access restricted to doctors and administrators."
 )
-public class AppointmentManagementController {
+public class AppointmentController {
 
     @Autowired
     private AppointmentService appointmentService;

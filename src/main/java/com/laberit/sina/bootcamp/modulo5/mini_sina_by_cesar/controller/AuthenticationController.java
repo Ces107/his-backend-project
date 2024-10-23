@@ -21,6 +21,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 
 @RestController
@@ -61,7 +62,13 @@ public class AuthenticationController {
             ),
             @ApiResponse(
                     responseCode = "400",
-                    description = "Invalid login or password"
+                    description = "Invalid login or password",
+                    content = {@Content(
+                    mediaType = "application/json",
+                    schema = @Schema(implementation = LoginDTO.class)
+            )}
+
+
             ),
             @ApiResponse(
                     responseCode = "500",
@@ -91,7 +98,12 @@ public class AuthenticationController {
     @ApiResponses(value = {
             @ApiResponse(
                     responseCode = "200",
-                    description = "User registered successfully"
+                    description = "User registered successfully",
+                    content = {@Content(
+                            mediaType = "application/json",
+                            schema = @Schema(implementation = RegisterDTO.class)
+                    )}
+
             ),
             @ApiResponse(
                     responseCode = "400",
@@ -102,17 +114,19 @@ public class AuthenticationController {
                     description = "Internal server error"
             )
     })
+
     @PostMapping("/register")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<String> register(@RequestBody @Valid RegisterDTO data) {
+    public String register(@RequestBody @Valid RegisterDTO data) {
         if (this.userRepository.existsByUsername(data.login())) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Username already exists");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Username already exists");
         }
 
         String encryptedPassword = new BCryptPasswordEncoder().encode(data.password());
         User newUser = new User(data.firstName(), data.lastName(), data.login(), encryptedPassword, data.role(), data.permissions());
         this.userRepository.save(newUser);
 
-        return ResponseEntity.ok("User registered successfully");
+        return "User registered successfully, your user ID is: " + newUser.getId();
     }
+
 }

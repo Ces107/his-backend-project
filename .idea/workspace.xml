@@ -4,8 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Code reshaped">
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Swagger enhanced">
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/OpenApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AnalyticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AnalyticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AppointmentManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/DiagnosisManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/DiagnosisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/PatientManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/UserManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/UserManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/DataInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/OpenApiConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/UserDetailsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AnalyticsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AnalyticsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AppointmentManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/DiagnosisManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/PatientManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/UserManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/UserManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AppointmentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AppointmentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AuthDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AuthDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/CreatePatientDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/CreatePatientDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/DiagnosisDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/DiagnosisDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/LoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/LoginDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/PatientDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/PatientDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/RegisterDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/RegisterDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/AppointmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/AppointmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/DiagnosisServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/DiagnosisServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/PatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/PatientServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +77,6 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -91,7 +129,7 @@
       <updated>1729670999713</updated>
       <workItem from="1729671004707" duration="3615000" />
       <workItem from="1729680091427" duration="118000" />
-      <workItem from="1729681757855" duration="432000" />
+      <workItem from="1729681757855" duration="3709000" />
     </task>
     <task id="LOCAL-00001" summary="Updated gitlab-CICD">
       <option name="closed" value="true" />
@@ -149,7 +187,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729676017561</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ci updated">
+      <option name="closed" value="true" />
+      <created>1729682382883</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729682382883</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ci updated">
+      <option name="closed" value="true" />
+      <created>1729682708133</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729682708133</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +226,8 @@
     <MESSAGE value="Build and deploy job added to feature branch" />
     <MESSAGE value="Bugfix in gitlab-ci.yml, configuration/ModelMapperConfig.java:[3,23] package org.modelmapper does not exist" />
     <MESSAGE value="Context path updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Context path updated" />
+    <MESSAGE value="Ci updated" />
+    <MESSAGE value="Swagger enhanced" />
+    <option name="LAST_COMMIT_MESSAGE" value="Swagger enhanced" />
   </component>
 </project>
