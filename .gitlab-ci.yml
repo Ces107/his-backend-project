@@ -8,11 +8,6 @@ variables:
   DOCKER_TLS_CERTDIR: ""
 
 
-default:
-  tags:
-    - CesRunner
-
-
 build:
   stage: build
   image: docker:20.10.16
@@ -27,22 +22,19 @@ build:
     expire_in: 1 day
   only:
     - develop
+  tags:
+    - CesRunner
 
 
 deploy:
   stage: deploy
-  tags:
-    - shell
+  image: docker:20.10.16
+  services:
+    - docker:dind
   script:
-
-    - sudo apt-get update
-    - sudo apt-get install -y docker.io
-    - sudo systemctl start docker
-    - sudo systemctl enable docker
-
+    - docker info
     - docker-compose -f docker-compose.yml pull
     - docker-compose -f docker-compose.yml up -d
-
     - docker ps
     - echo "La aplicación está corriendo en la IP:"
     - hostname -I | awk '{print $1}'
@@ -50,3 +42,6 @@ deploy:
     - main
   environment:
     name: production
+
+  tags:
+    - shell
