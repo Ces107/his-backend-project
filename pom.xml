@@ -36,7 +36,7 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
-
+		<!-- PostgreSQL Driver -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -77,6 +77,13 @@
 			<version>2.1.0</version>
 		</dependency>
 
+		<!-- ModelMapper -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>3.1.1</version>
+		</dependency>
+
 		<!-- Dependencias de prueba -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -91,6 +98,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.Application</mainClass>
+				</configuration>
 			</plugin>
 			<!-- Plugin del compilador Maven -->
 			<plugin>
@@ -104,4 +114,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>

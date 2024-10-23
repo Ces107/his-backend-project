@@ -1,18 +1,56 @@
+# Definir variables generales
+variables:
+  PROJECT_NAME: "miniSinaV1"
+  DOCKER_DRIVER: overlay2
+  # DOCKER_HOST: tcp://docker:2375  # Eliminado
+  DOCKER_TLS_CERTDIR: ""
+  JAVA_VERSION: "17.0.12"
+  MAVEN_VERSION: "3.8.5"
+  SPRING_BOOT_VERSION: "3.3.4"
+
+# Definir las etapas del pipeline
 stages:
+  - check
   - build
   - deploy
 
-variables:
-  DOCKER_DRIVER: overlay2
-  DOCKER_HOST: tcp://docker:2375
-  DOCKER_TLS_CERTDIR: ""
+# Job de verificación de entorno
+check_runner:
+  stage: check
+  script:
+    - echo "=== Sistema Operativo ==="
+    - uname -a
 
+    - echo "=== Docker ==="
+    - docker --version || echo "Docker no está instalado"
 
+    - echo "=== Java ==="
+    - java -version || echo "Java no está instalado"
+
+    - echo "=== Maven ==="
+    - mvn -v || echo "Maven no está instalado"
+
+    - echo "=== Git ==="
+    - git --version || echo "Git no está instalado"
+
+    - echo "=== Docker Compose ==="
+    - docker-compose --version || echo "Docker Compose no está instalado"
+
+    - echo "=== Espacio en Disco ==="
+    - df -h
+
+    - echo "=== Variables de Entorno ==="
+    - printenv
+
+  only:
+    - featureCICD
+
+  tags:
+    - bootcamp
+
+# Job de build
 build:
   stage: build
-  image: docker:20.10.16
-  services:
-    - docker:dind
   script:
     - docker info
     - docker-compose -f docker-compose.yml build
@@ -20,17 +58,23 @@ build:
     paths:
       - target/*.jar
     expire_in: 1 day
+  only:
+    - develop
+    - featureCICD
+  tags:
+    - bootcamp
 
+# Job de deploy
 deploy:
   stage: deploy
-  image: docker:20.10.16
-  services:
-    - docker:dind
   script:
     - docker-compose -f docker-compose.yml pull
     - docker-compose -f docker-compose.yml up -d
     - docker ps
   only:
     - main
+    - featureCICD
   environment:
     name: production
+  tags:
+    - bootcamp

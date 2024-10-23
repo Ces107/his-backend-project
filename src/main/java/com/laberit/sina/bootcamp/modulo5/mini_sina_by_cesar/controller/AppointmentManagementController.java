@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/patients/{patientId}/appointments")
+@RequestMapping("/patients/{patientId}/appointments")
 @Tag(
         name = "AppointmentManagementController",
         description = "Controller for managing appointments related to a specific patient. Access restricted to doctors and administrators."

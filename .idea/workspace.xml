@@ -4,51 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Updated gitlab-CICD">
-      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-    </list>
+    <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Context path updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Record" />
-        <option value="Interface" />
-        <option value="Enum" />
-        <option value="Exception" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitLabMergeRequestFiltersHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPENED&quot;,
-    &quot;assignee&quot;: {
-      &quot;type&quot;: &quot;org.jetbrains.plugins.gitlab.mergerequest.ui.filters.GitLabMergeRequestsFiltersValue.MergeRequestsMemberFilterValue.MergeRequestsAssigneeFilterValue&quot;,
-      &quot;username&quot;: &quot;cpereiro&quot;,
-      &quot;fullname&quot;: &quot;César Pereiro García&quot;
-    }
-  }
-}</component>
-  <component name="GitLabMergeRequestsSettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;first&quot;: &quot;https://gitlab.laberit.com/sina/bootcamp-backend/m-dulo-5/mini-sina-by-cesar&quot;,
-    &quot;second&quot;: &quot;63d4b66f-8f7c-49b1-8ac1-e7f7efe8693c&quot;
-  }
-}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
-  <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -56,14 +28,10 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="2njuRl2uCf0C3XGjoZm7uY7Lynz" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2npXSMhF01qXBJTwAPLZ61Z3VQu" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -79,34 +47,22 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "featureCICD",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/cpereiro/Desktop/sina.bootcamp.modulo5.mini-sina-by-cesar/src/main/java/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl",
+    "last_opened_file_path": "C:/Users/cpereiro/Desktop/sina.bootcamp.modulo5.mini-sina-by-cesar",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "sql.rename.search.for.storage.occurrences": "true",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
-    ]
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\java\com\laberit\sina\bootcamp\modulo5\mini_sina_by_cesar\service\impl" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\resources\sql" />
-      <recent name="C:\Users\cpereiro\Desktop\sina.bootcamp.modulo5.mini-sina-by-cesar\src\main\resources\db\migration" />
-    </key>
-  </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="sina.bootcamp.modulo5.mini-sina-by-cesar" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.Application" />
@@ -126,77 +82,92 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="" />
-      <created>1729498799641</created>
+      <changelist id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Updated gitlab-CICD" />
+      <created>1729670999713</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1729498799641</updated>
-      <workItem from="1729498800924" duration="12074000" />
-      <workItem from="1729557802213" duration="21714000" />
-      <workItem from="1729593270212" duration="5413000" />
-      <workItem from="1729614362149" duration="4592000" />
-      <workItem from="1729663660631" duration="5719000" />
+      <updated>1729670999713</updated>
+      <workItem from="1729671004707" duration="3615000" />
     </task>
-    <task id="LOCAL-00001" summary="Configuracion de seguridad añadida">
+    <task id="LOCAL-00001" summary="Updated gitlab-CICD">
       <option name="closed" value="true" />
-      <created>1729503138904</created>
+      <created>1729671260541</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1729503138905</updated>
+      <updated>1729671260541</updated>
     </task>
-    <task id="LOCAL-00002" summary="Swagger enhanced">
+    <task id="LOCAL-00002" summary="Pipelines updated">
       <option name="closed" value="true" />
-      <created>1729618812218</created>
+      <created>1729671730224</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1729618812218</updated>
+      <updated>1729671730224</updated>
     </task>
-    <task id="LOCAL-00003" summary="Swagger enhanced">
+    <task id="LOCAL-00003" summary="Pipelines updated">
       <option name="closed" value="true" />
-      <created>1729618932531</created>
+      <created>1729671822003</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1729618932531</updated>
+      <updated>1729671822003</updated>
     </task>
-    <task id="LOCAL-00004" summary="Bugfixing of endpoints. &#10;AnalyticsController enhanced">
+    <task id="LOCAL-00004" summary="Build and deploy job added to feature branch">
       <option name="closed" value="true" />
-      <created>1729668399071</created>
+      <created>1729672000864</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1729668399072</updated>
+      <updated>1729672000864</updated>
     </task>
-    <task id="LOCAL-00005" summary="Recompiled .jar">
+    <task id="LOCAL-00005" summary="Bugfix in gitlab-ci.yml, configuration/ModelMapperConfig.java:[3,23] package org.modelmapper does not exist">
       <option name="closed" value="true" />
-      <created>1729669543042</created>
+      <created>1729672467222</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1729669543042</updated>
+      <updated>1729672467222</updated>
     </task>
-    <task id="LOCAL-00006" summary="Updated gitlab-CICD">
+    <task id="LOCAL-00006" summary="Bugfix in gitlab-ci.yml, configuration/ModelMapperConfig.java:[3,23] package org.modelmapper does not exist">
       <option name="closed" value="true" />
-      <created>1729669608989</created>
+      <created>1729675867947</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1729669608989</updated>
+      <updated>1729675867947</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Context path updated">
+      <option name="closed" value="true" />
+      <created>1729676017561</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729676017561</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Configuracion de seguridad añadida" />
-    <MESSAGE value="Swagger enhanced" />
-    <MESSAGE value="Bugfixing of endpoints. &#10;AnalyticsController enhanced" />
-    <MESSAGE value="Recompiled .jar" />
     <MESSAGE value="Updated gitlab-CICD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitlab-CICD" />
+    <MESSAGE value="Pipelines updated" />
+    <MESSAGE value="Build and deploy job added to feature branch" />
+    <MESSAGE value="Bugfix in gitlab-ci.yml, configuration/ModelMapperConfig.java:[3,23] package org.modelmapper does not exist" />
+    <MESSAGE value="Context path updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Context path updated" />
   </component>
 </project>
