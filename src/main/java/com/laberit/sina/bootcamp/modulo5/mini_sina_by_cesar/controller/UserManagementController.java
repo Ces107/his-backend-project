@@ -24,7 +24,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/mini-sina/v1/users")
+@RequestMapping("/users")
 @Tag(
         name = "UserManagementController",
         description = "Controller for managing users in the system."

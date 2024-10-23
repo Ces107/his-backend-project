@@ -19,7 +19,7 @@ import java.time.LocalDate;
 import java.util.Date;
 
 @RestController
-@RequestMapping("/api/analytics")
+@RequestMapping("/analytics")
 @Tag(
         name = "AnalyticsController",
         description = "Controller that exposes analytics endpoints for patients and appointments. Supports optional date range filtering."

@@ -27,7 +27,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/mini-sina/v1/patients")
+@RequestMapping("/patients")
 @Tag(
         name = "PatientManagementController",
         description = "Controller for managing patient data."

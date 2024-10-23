@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 
 
 @RestController
-@RequestMapping("mini-sina/v1/patients/{patientId}/diagnoses")
+@RequestMapping("/patients/{patientId}/diagnoses")
 @Tag(
         name = "Diagnosis",
         description = "Controller for managing diagnoses related to a specific patient."
