@@ -1,56 +1,23 @@
+# Definir variables generales
+variables:
+  PROJECT_NAME: "miniSinaV1"
+  DOCKER_DRIVER: overlay2
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_TLS_CERTDIR: ""
+  JAVA_VERSION: "17.0.12"
+  MAVEN_VERSION: "3.8.5"
+  SPRING_BOOT_VERSION: "3.3.4"
+
+# Definir las etapas del pipeline
 stages:
   - check
   - build
   - deploy
 
-variables:
-  DOCKER_DRIVER: overlay2
-  DOCKER_HOST: tcp://docker:2375
-  DOCKER_TLS_CERTDIR: ""
-
-
-build:
-  stage: build
-  image: docker:20.10.16
-  services:
-    - docker:dind
-  script:
-    - docker info
-    - docker-compose -f docker-compose.yml build
-  artifacts:
-    paths:
-      - target/*.jar
-    expire_in: 1 day
-  only:
-    - develop
-  tags:
-    - CesRunner
-
-
-deploy:
-  stage: deploy
-  image: docker:20.10.16
-  services:
-    - docker:dind
-  script:
-    - docker info
-    - docker-compose -f docker-compose.yml pull
-    - docker-compose -f docker-compose.yml up -d
-    - docker ps
-    - echo "La aplicación está corriendo en la IP:"
-    - hostname -I | awk '{print $1}'
-  only:
-    - main
-  environment:
-    name: production
-
-  tags:
-    - shell
-
+# Job de verificación de entorno
 check_runner:
   stage: check
   script:
-
     - echo "=== Sistema Operativo ==="
     - uname -a
 
@@ -78,5 +45,45 @@ check_runner:
   only:
     - featureCICD
 
+  tags:
+    - bootcamp
+
+# Job de build
+build:
+  stage: build
+  image: docker:20.10.16
+  services:
+    - docker:dind
+  script:
+    - docker info
+    - docker-compose -f docker-compose.yml build
+  artifacts:
+    paths:
+      - target/*.jar
+    expire_in: 1 day
+  only:
+    - develop
+    - featureCICD
+  tags:
+    - bootcamp
+
+# Job de deploy
+deploy:
+  stage: deploy
+  image: docker:20.10.16
+  services:
+    - docker:dind
+  script:
+    - docker info
+    - docker-compose -f docker-compose.yml pull
+    - docker-compose -f docker-compose.yml up -d
+    - docker ps
+    - echo "La aplicación está corriendo en la IP:"
+    - hostname -I | awk '{print $1}'
+  only:
+    - main
+    - featureCICD
+  environment:
+    name: production
   tags:
     - bootcamp
