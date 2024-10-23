@@ -20,11 +20,6 @@ build:
     paths:
       - target/*.jar
     expire_in: 1 day
-  only:
-    - develop
-  tags:
-    - CesRunner
-
 
 deploy:
   stage: deploy
@@ -32,17 +27,10 @@ deploy:
   services:
     - docker:dind
   script:
-    - docker info
     - docker-compose -f docker-compose.yml pull
     - docker-compose -f docker-compose.yml up -d
     - docker ps
-    - echo "La aplicación está corriendo en la IP:"
-    - hostname -I | awk '{print $1}'
   only:
     - main
   environment:
     name: production
-
-  tags:
-    - shell
-
