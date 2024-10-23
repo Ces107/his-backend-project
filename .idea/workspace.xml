@@ -4,8 +4,81 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Context path updated">
+    <list default="true" id="ce2ff69c-a525-4ab2-9025-366411dee9a9" name="Changes" comment="Code reshaped">
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/DataInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/OpenApiConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/SecurityFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/TokenService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/configuration/security/UserDetailsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AnalyticsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AppointmentManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/DiagnosisManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/PatientManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/controller/UserManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AppointmentAnalyticsDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AppointmentDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/AuthDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/CreatePatientDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/DiagnosisDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/DoctorAppointmentStatsDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/LoginDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/PatientAnalyticsDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/PatientDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/RegisterDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/UserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/AppointmentConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/DiagnosisConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/PatientConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/dto/converters/UserConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/exception/ResourceNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Appointment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Diagnosis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/Patient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/AppointmentStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/DiagnosisStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Disease.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Gender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/model/enumerations/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/AppointmentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/DiagnosisRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/PatientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/AnalyticsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/AppointmentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/DiagnosisService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/PatientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/AnalyticsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/AppointmentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/DiagnosisServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/PatientServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/UserServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sina.bootcamp.modulo5.mini-sina-by-cesar-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sina.bootcamp.modulo5.mini-sina-by-cesar-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.ApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/laberit/sina/bootcamp/modulo5/mini_sina_by_cesar/ApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +88,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="featureCICD" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,24 +114,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/cpereiro/Desktop/sina.bootcamp.modulo5.mini-sina-by-cesar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;featureCICD&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cpereiro/Desktop/sina.bootcamp.modulo5.mini-sina-by-cesar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -90,6 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729670999713</updated>
       <workItem from="1729671004707" duration="3615000" />
+      <workItem from="1729680091427" duration="118000" />
     </task>
     <task id="LOCAL-00001" summary="Updated gitlab-CICD">
       <option name="closed" value="true" />

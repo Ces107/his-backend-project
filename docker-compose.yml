@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   db:
     image: postgres:14
@@ -8,6 +10,8 @@ services:
     networks:
       - app_net
     restart: unless-stopped
+    volumes:
+      - db_data:/var/lib/postgresql/data
 
   app:
     build:
@@ -19,14 +23,10 @@ services:
       - db
     ports:
       - "8080:8080"
-    volumes:
-      - db_data:/var/lib/postgresql/data
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/db
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/db
       - SPRING_DATASOURCE_USERNAME=user
       - SPRING_DATASOURCE_PASSWORD=password
-
-
 
 networks:
   app_net:
