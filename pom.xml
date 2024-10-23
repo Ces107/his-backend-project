@@ -98,6 +98,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.Application</mainClass>
+				</configuration>
 			</plugin>
 			<!-- Plugin del compilador Maven -->
 			<plugin>
@@ -111,4 +114,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
