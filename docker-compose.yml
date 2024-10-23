@@ -24,7 +24,7 @@ services:
     ports:
       - "9090:9090"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://custom_db:6543/custom_db
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://custom_db:5432/custom_db
       - SPRING_DATASOURCE_USERNAME=user
       - SPRING_DATASOURCE_PASSWORD=password
 
