@@ -1,10 +1,14 @@
+# Definir variables generales
 variables:
   PROJECT_NAME: "miniSinaV1"
   DOCKER_DRIVER: overlay2
-  DOCKER_HOST: tcp://localhost:2375
+  # DOCKER_HOST: tcp://docker:2375  # Eliminado
   DOCKER_TLS_CERTDIR: ""
+  JAVA_VERSION: "17.0.12"
+  MAVEN_VERSION: "3.8.5"
+  SPRING_BOOT_VERSION: "3.3.4"
 
-# Etapas del pipeline
+# Definir las etapas del pipeline
 stages:
   - check
   - build
@@ -40,19 +44,14 @@ check_runner:
 
   only:
     - featureCICD
+
   tags:
     - bootcamp
 
 # Job de build
 build:
   stage: build
-  image: docker:20.10.16
-  services:
-    - name: docker:dind
-      command: ["--host=tcp://0.0.0.0:2375", "--tls=false"]
   script:
-    - echo "Esperando que Docker inicie..."
-    - sleep 20
     - docker info
     - docker-compose -f docker-compose.yml build
   artifacts:
@@ -61,19 +60,14 @@ build:
     expire_in: 1 day
   only:
     - develop
+    - featureCICD
   tags:
     - bootcamp
 
 # Job de deploy
 deploy:
   stage: deploy
-  image: docker:20.10.16
-  services:
-    - name: docker:dind
-      command: ["--host=tcp://0.0.0.0:2375", "--tls=false"]
   script:
-    - echo "Esperando que Docker inicie..."
-    - sleep 20
     - docker info
     - docker-compose -f docker-compose.yml pull
     - docker-compose -f docker-compose.yml up -d
@@ -82,6 +76,7 @@ deploy:
     - hostname -I | awk '{print $1}'
   only:
     - main
+    - featureCICD
   environment:
     name: production
   tags:
