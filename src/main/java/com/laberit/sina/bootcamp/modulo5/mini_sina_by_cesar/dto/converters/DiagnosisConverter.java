@@ -21,8 +21,8 @@ public class DiagnosisConverter {
 
     public Diagnosis convertToEntity(DiagnosisDTO diagnosisDTO) {
         Diagnosis diagnosis = new Diagnosis();
-        diagnosis.setDisease(Disease.valueOf(diagnosisDTO.disease()));
-        diagnosis.setStatus(DiagnosisStatus.valueOf(diagnosisDTO.status()));
+        diagnosis.setDisease(Disease.valueOf(diagnosisDTO.getDisease()));
+        diagnosis.setStatus(DiagnosisStatus.valueOf(diagnosisDTO.getStatus()));
         return diagnosis;
     }
 }

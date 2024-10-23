@@ -138,7 +138,7 @@ public class AnalyticsServiceImpl implements AnalyticsService {
      * @return
      */
     private List<DoctorAppointmentStatsDTO> getDoctorsWithMostCanceledAppointments(Date startDate, Date endDate) {
-        List<Object[]> results = appointmentRepository.findDoctorsWithMostCanceledAppointments("CANCELLED", startDate, endDate);
+        List<Object[]> results = appointmentRepository.findDoctorsWithMostStatusAppointments("CANCELLED", startDate, endDate);
         List<DoctorAppointmentStatsDTO> doctorStats = new ArrayList<>();
         for (Object[] result : results) {
             Long doctorId = ((Number) result[0]).longValue();

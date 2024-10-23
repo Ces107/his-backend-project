@@ -89,14 +89,6 @@ public class AnalyticsController {
             @ApiResponse(
                     responseCode = "200",
                     description = "Appointment analytics retrieved successfully"
-            ),
-            @ApiResponse(
-                    responseCode = "400",
-                    description = "Invalid date format or invalid parameters"
-            ),
-            @ApiResponse(
-                    responseCode = "500",
-                    description = "Internal server error"
             )
     })
     @GetMapping("/appointments")

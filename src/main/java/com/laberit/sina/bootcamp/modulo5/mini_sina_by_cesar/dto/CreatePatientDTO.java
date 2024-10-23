@@ -4,5 +4,5 @@ import com.laberit.sina.bootcamp.modulo5.mini_sina_by_cesar.model.enumerations.G
 
 import java.util.Date;
 
-public record CreatePatientDTO(String firstName, String lastName, Date dateOfBirth, Gender gender){}
+public record CreatePatientDTO(Date dateOfBirth, Gender gender,Long userId){}
 

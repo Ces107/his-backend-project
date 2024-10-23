@@ -30,10 +30,9 @@ public class PatientConverter {
 
     public Patient convertToEntityNoId(CreatePatientDTO patientDTO) {
         Patient patient = new Patient();
-        patient.setFirstName(patientDTO.firstName());
-        patient.setLastName(patientDTO.lastName());
         patient.setDateOfBirth(patientDTO.dateOfBirth());
         patient.setGender(patientDTO.gender());
+        patient.setId(patientDTO.userId());
         return patient;
     }
 }

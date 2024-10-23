@@ -65,6 +65,7 @@ public class PatientManagementController {
     @ResponseStatus(HttpStatus.CREATED)
     public PatientDTO createPatient(@RequestBody CreatePatientDTO patientDTO) {
         Patient patient = patientConverter.convertToEntityNoId(patientDTO);
+
         Patient savedPatient = patientService.savePatient(patient);
         return patientConverter.convertToDTO(savedPatient);
     }

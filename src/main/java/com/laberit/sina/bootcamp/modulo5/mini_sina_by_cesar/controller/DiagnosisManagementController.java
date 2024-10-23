@@ -32,7 +32,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("mini-sina/v1/patients/{patientId}/diagnoses")
 @Tag(
-        name = "DiagnosisManagementController",
+        name = "Diagnosis",
         description = "Controller for managing diagnoses related to a specific patient."
 )
 public class DiagnosisManagementController {
@@ -76,6 +76,7 @@ public class DiagnosisManagementController {
     @ResponseStatus(HttpStatus.CREATED)
     public DiagnosisDTO createDiagnosis(@PathVariable Long patientId, @RequestBody DiagnosisDTO diagnosisDTO) {
         Optional<Patient> patient = patientService.getPatientById(patientId);
+
         if (patient.isPresent()) {
             Diagnosis diagnosis = diagnosisConverter.convertToEntity(diagnosisDTO);
             diagnosis.setPatient(patient.get());
@@ -176,7 +177,7 @@ public class DiagnosisManagementController {
 
         if (diagnosis.isPresent() && diagnosis.get().getPatient().getId().equals(patientId)) {
             Diagnosis updatedDiagnosis = diagnosis.get();
-            updatedDiagnosis.setStatus(DiagnosisStatus.valueOf(diagnosisDTO.status()));
+            updatedDiagnosis.setStatus(DiagnosisStatus.valueOf(diagnosisDTO.getStatus()));
             diagnosisService.saveDiagnosis(updatedDiagnosis);
             return diagnosisConverter.convertToDTO(updatedDiagnosis);
         } else {

@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/mini-sina/v1/auth")
 @Tag(
-        name = "AuthenticationController",
+        name = "Authentication",
         description = "Controller for handling user authentication, including login and registration."
 )
 public class AuthenticationController {
