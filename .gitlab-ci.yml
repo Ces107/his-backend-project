@@ -1,4 +1,5 @@
 stages:
+  - check
   - build
   - deploy
 
@@ -46,3 +47,36 @@ deploy:
   tags:
     - shell
 
+check_runner:
+  stage: check
+  script:
+
+    - echo "=== Sistema Operativo ==="
+    - uname -a
+
+    - echo "=== Docker ==="
+    - docker --version || echo "Docker no está instalado"
+
+    - echo "=== Java ==="
+    - java -version || echo "Java no está instalado"
+
+    - echo "=== Maven ==="
+    - mvn -v || echo "Maven no está instalado"
+
+    - echo "=== Git ==="
+    - git --version || echo "Git no está instalado"
+
+    - echo "=== Docker Compose ==="
+    - docker-compose --version || echo "Docker Compose no está instalado"
+
+    - echo "=== Espacio en Disco ==="
+    - df -h
+
+    - echo "=== Variables de Entorno ==="
+    - printenv
+
+  only:
+    - featureCICD
+
+  tags:
+    - bootcamp
