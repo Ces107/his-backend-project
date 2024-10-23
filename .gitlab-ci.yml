@@ -71,6 +71,8 @@ deploy:
     - docker-compose -f docker-compose.yml pull
     - docker-compose -f docker-compose.yml up -d
     - docker ps
+    - docker-compose -f docker-compose.yml logs app
+
   only:
     - main
     - featureCICD
