@@ -34,19 +34,23 @@ import java.util.Optional;
 )
 public class AppointmentController {
 
-    @Autowired
-    private AppointmentService appointmentService;
+    private final AppointmentService appointmentService;
 
-    @Autowired
-    private PatientService patientService;
+    private final PatientService patientService;
 
-    @Autowired
-    private UserService userService;
+    private final UserService userService;
 
-    @Autowired
-    private AppointmentConverter appointmentConverter;
-    @Autowired
-    private AnalyticsController analyticsController;
+    private final AppointmentConverter appointmentConverter;
+
+    private final AnalyticsController analyticsController;
+
+    public AppointmentController(AppointmentService appointmentService, PatientService patientService, UserService userService, AppointmentConverter appointmentConverter, AnalyticsController analyticsController) {
+        this.appointmentService = appointmentService;
+        this.patientService = patientService;
+        this.userService = userService;
+        this.appointmentConverter = appointmentConverter;
+        this.analyticsController = analyticsController;
+    }
 
     /**
      * Creates a new appointment for a specific patient.
