@@ -64,9 +64,9 @@ public class AuthenticationController {
                     responseCode = "400",
                     description = "Invalid login or password",
                     content = {@Content(
-                    mediaType = "application/json",
-                    schema = @Schema(implementation = LoginDTO.class)
-            )}
+                            mediaType = "application/json",
+                            schema = @Schema(implementation = LoginDTO.class)
+                    )}
 
 
             ),

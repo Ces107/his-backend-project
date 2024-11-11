@@ -69,7 +69,7 @@ public class AppointmentController {
             @ApiResponse(
                     responseCode = "201",
                     description = "Appointment created successfully",
-                    content = { @Content(
+                    content = {@Content(
                             mediaType = "application/json",
                             schema = @Schema(implementation = AppointmentDTO.class),
                             examples = @ExampleObject(value = "{ 'id': 1, 'doctorId': 2, 'status': 'PENDING', 'date': '2024-10-22' }")
@@ -84,8 +84,7 @@ public class AppointmentController {
     @ResponseStatus(HttpStatus.CREATED)
     public AppointmentDTO createAppointment(@PathVariable Long patientId, @RequestBody AppointmentDTO appointmentDTO) {
         Optional<Patient> patient = patientService.getPatientById(patientId);
-        Optional<User> doctor = userService.getUserById(appointmentDTO.doctorId());
-
+        Optional<User> doctor = userSerrvice.getUserById(appointmentDTO.doctorId());
 
 
         if (patient.isPresent() && doctor.isPresent()) {
@@ -116,7 +115,7 @@ public class AppointmentController {
             @ApiResponse(
                     responseCode = "200",
                     description = "Appointments retrieved successfully",
-                    content = { @Content(
+                    content = {@Content(
                             mediaType = "application/json",
                             schema = @Schema(implementation = AppointmentDTO.class)
                     )}
@@ -157,7 +156,7 @@ public class AppointmentController {
             @ApiResponse(
                     responseCode = "200",
                     description = "Appointment status updated successfully",
-                    content = { @Content(
+                    content = {@Content(
                             mediaType = "application/json",
                             schema = @Schema(implementation = AppointmentDTO.class)
                     )}
